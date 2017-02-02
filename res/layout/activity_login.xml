@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aggni_orange_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.75"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aggni_logo" />
+
+        <EditText
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|left"
+            android:hint="Enter Phone Number"
+            android:maxLength="10"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/userpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Log In"
+            android:background="#FF6600"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/signup_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not a Member?"
+            android:textStyle="bold|italic"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF6600"
+            android:layout_marginTop="5dp"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

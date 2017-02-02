@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/event_image"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.65"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/event_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Date"
+                android:textSize="13sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.85"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Title"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/event_description"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="marquee"
+                android:singleLine="false"
+                android:text="lksnflkdsnflmds lmsd mlvv ;sdl v;lsdvl;sd v;mdf vl; sdlcsdlfmsdlknb d v;lsmfpksrnhjdnlvfl&apos;ksdbhd lvmps"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
